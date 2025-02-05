@@ -4,3 +4,5 @@
 - [x] Beveging av musepeker
 - [ ] Trykking (left click og right click)
 - [x] Andre hotkeys for mer eller mindre presisjon
+
+# PÅ LINUX FUNKER DET BARE PÅ XORG
