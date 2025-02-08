@@ -1,5 +1,4 @@
-# Trenger ikke mus når du har RustMouse
-# PÅ LINUX FUNKER DET BARE PÅ XORG
+# PÅ LINUX FUNKER DET BARE PÅ XORG, INGEN ANELSE HVORDAN DET FUNKER PÅ WINDOWS OG MACOS
 
 ## To-Do
 - [x] Beveging av musepeker
