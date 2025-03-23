@@ -94,6 +94,7 @@ fn main() {
             && keys.contains(&Keycode::LAlt)
             && keys.contains(&Keycode::Escape)
         {
+            // skriver ut "Vi preikes" og dreper programmet
             println!("Vi preikes");
             break;
         }
