@@ -3,6 +3,12 @@ use enigo::*;
 use std::{thread, time::Duration};
 
 fn main() {
+    println!("  ____            _   __  __                      ");
+    println!(" |  _ | _   _ ___| |_|  |/  | ___  _   _ ___  ___ ");
+    println!(" | |_) | | | / __| __| ||/| |/ _ || | | / __|/ _ |");
+    println!(" |  _ <| |_| |__ | |_| |  | | (_) | |_| |__ |  __/");
+    println!(" |_| |_||__,_|___/|__|_|  |_||___/ |__,_|___/|___| \n");
+
     let mut enigo = Enigo::new();
     let device_state = DeviceState::new();
 
