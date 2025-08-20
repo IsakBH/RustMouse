@@ -14,6 +14,8 @@ fn main() {
 
     println!("Trykk på Meta + LCtrl + LShift + Pil for å bevege musen med lav presisjon");
     println!("Trykk på Meta + LCtrl + LAlt + Pil for å bevege musen med høy presisjon");
+    println!("Meta + LCtrl + LShift/LAlt + RShift for å venstreklikke");
+    println!("Meta + LCtrl + LShift/LAlt + RCtrl for å høyreklikke");
     println!("Trykk på Meta + LAlt + Escape for å gå ut av programmet");
 
     loop {
@@ -105,13 +107,25 @@ fn main() {
             break;
         }
 
+        // venstre click
         if keys.contains(&Keycode::Meta)
             && keys.contains(&Keycode::LControl)
-            && keys.contains(&Keycode::LShift)
-            && keys.contains(&Keycode::RControl)
+            && keys.contains(&Keycode::LShift) || keys.contains(&Keycode::LAlt)
+            && keys.contains(&Keycode::RShift)
         {
             // trykker på venstre museknapp
             enigo.mouse_click(MouseButton::Left);
+            thread::sleep(Duration::from_secs(1));
+        }
+
+        // høyre click
+        if keys.contains(&Keycode::Meta)
+            && keys.contains(&Keycode::LControl)
+            && keys.contains(&Keycode::LShift) || keys.contains(&Keycode::LAlt)
+            && keys.contains(&Keycode::RControl)
+        {
+            // trykker på venstre museknapp
+            enigo.mouse_click(MouseButton::Right);
             thread::sleep(Duration::from_secs(1));
         }
 
