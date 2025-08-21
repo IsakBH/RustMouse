@@ -18,8 +18,8 @@ jobs:
     - uses: actions/checkout@v4
     - name: Upgrade
       run: sudo apt-get upgrade && sudo apt-get update
-    - name: Install xorg
-      run: sudo apt install xorg
+    - name: Install x11
+      run: sudo apt install x11
     - name: Build
       run: cargo build --verbose
     - name: Run tests
