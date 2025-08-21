@@ -19,7 +19,7 @@ jobs:
     - name: Upgrade
       run: sudo apt-get upgrade && sudo apt-get update
     - name: Install x11
-      run: sudo apt install x11
+      run: sudo apt install libx11-dev
     - name: Build
       run: cargo build --verbose
     - name: Run tests
