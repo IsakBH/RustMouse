@@ -16,6 +16,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - name: Upgrade
+      run: sudo apt-get upgrade
     - name: Install xorg
       run: sudo apt install xorg
     - name: Build
