@@ -1,4 +1,4 @@
-# PÅ LINUX FUNKER DET BARE PÅ XORG, INGEN ANELSE OM DET FUNKER PÅ WINDOWS OG MACOS
+# Funker bare på Xorg på Linux
 
 ## Hvordan laste ned og builde
 1. Clone repo-et med git
