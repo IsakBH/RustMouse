@@ -11,8 +11,3 @@
 4. Kjør programmet med [cargo]([url](https://doc.rust-lang.org/cargo/))
 - `cargo run`
 - For å bare builde programmet, kjør `cargo build --release`
-
-## To-Do
-- [x] Beveging av musepeker
-- [ ] Trykking (left click og right click)
-- [x] Andre hotkeys for mer eller mindre presisjon
